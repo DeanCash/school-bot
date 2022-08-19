@@ -14,6 +14,7 @@ pr_app = f"[{Fore.RED}APPLICATION{Fore.RESET}] >> "
 pr_bot = f"[{Fore.BLUE}BOT{Fore.RESET}] >> "
 pr_error = f"[{Fore.LIGHTRED_EX}ERROR{Fore.RESET}] >> "
 pr_event = f"[{Fore.CYAN}EVENT{Fore.RESET}] >> "
+pr_command = lambda x: f"[{Fore.YELLOW}COMMAND{Fore.RESET}] | {x} >> "
 
 token_file = os.path.join("app", "private", "token.json")
 with open(token_file, "r") as f:

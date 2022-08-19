@@ -20,6 +20,12 @@ bot.token = bot_token
 
 print(f" {pr_app}Application Started")
 
-# 
+@bot.event
+async def on_ready():
+    print(f" {pr_bot}Bot is ready :D")
+
+for file in os.listdir(os.path.join("app", "commands")):
+    if file.endswith(".py"):
+        bot.load_extension(f"commands.{file[:-3]}")
 
 bot.run(bot.token)
