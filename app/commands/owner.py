@@ -5,8 +5,8 @@ class Owner(commands.Cog, description="Commands only the owner of the bot can us
     def __init__(self, bot: str) -> None:
         self.bot = bot
 
-    @commands.command(name="lolmaoo")
-    async def dwasdwa(self, ctx: Context):
+    @commands.command(name="test")
+    async def debug(self, ctx: Context):
         await ctx.send("WORKS!")
 
 def setup(bot):

@@ -16,7 +16,7 @@ pr_error = f"[{Fore.LIGHTRED_EX}ERROR{Fore.RESET}] >> "
 pr_event = f"[{Fore.CYAN}EVENT{Fore.RESET}] >> "
 pr_command = lambda x: f"[{Fore.YELLOW}COMMAND{Fore.RESET}] | {x} >> "
 
-token_file = os.path.join("app", "private", "token.json")
+token_file = os.path.join("app", "private", "secrets.json")
 with open(token_file, "r") as f:
     bot_token: str = json.load(f)['TOKEN']
 
