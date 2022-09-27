@@ -1,5 +1,6 @@
 import os
 import sys
+import asyncio
 import colorama
 
 import discord
@@ -39,6 +40,7 @@ async def on_message(message: Message):
 @bot.event
 async def on_reaction_add(emoji: discord.Reaction, user: Union[Member, User]):
     ...
+
 
 for file in os.listdir(os.path.join("app", "commands")):
     if file.endswith(".py"):
